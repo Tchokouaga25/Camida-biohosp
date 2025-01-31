@@ -5,7 +5,7 @@ body{
 }
 /*voici le css de mon header*/
 .debut2{
-    background-color: rgb(100, 209, 100);
+    background-color: rgb(218, 218, 218);
 }
 .debut1{
     background-color: rgb(7, 7, 7);
@@ -23,36 +23,26 @@ body{
     position: fixed; */
 }
 
+/*resposive du header*/
+
 @media  (min-width:450px ) and (max-width:750px) {
-    .header2{
-        padding: 0% 0%;
+    .Barre1{
+        margin: 0%;
+        justify-content: none;
     }
-    .header1{
-        padding: 0% 0%;
+    .Barre2{
+        margin: 0%;
+        justify-content: none;
     } 
-    nav,ul{
-        gap: 0px;
+    .deuxième{
+        display: flex;
+        flex-direction: column;
+    }
+    .produit{
+        display: flex;
+        flex-direction: column;
     }
   
-    .icon0{
-        display: flex;
-        gap: 0px;
-    } 
-    #icon2{
-        font-size: 10px;  
-    } 
-    
-    .button1{
-        
-        border-radius: 5px;
-        font-size: 10px;
-        cursor: pointer;
-           
-    }
-    nav,ul{
-        
-        gap: 0px;
-    }
 
 }
 /*Prémière barre du header*/
@@ -74,7 +64,7 @@ marquee,#direction{
 }
 #icon1{
     font-size: 16px;
-    color:green;
+    color:brown;
     
 }
 #direction{
@@ -94,7 +84,7 @@ nav,ul{
     gap: 3rem;
 }
 nav,li {   
-    
+    /* color: white; */
     list-style: none;
     font-size: 20px;
 }
@@ -103,13 +93,12 @@ nav,li {
     margin: 0px;
 }
 .button1{
-    border: 2px solid rgb(100, 209, 100);
+   
     margin: 0rem 0rem;
     border-radius: 10px;
     height: 3rem;
     margin-top: 1rem;
     background-color:red;
-    box-shadow: 0px 1px 1px 1px rgb(100, 209, 100);
     font-size: 16px;
     cursor: pointer;
     position: relative;   
@@ -121,7 +110,7 @@ nav,li {
 .button0{
     border: none;
     align-items: center;
-    background-color:rgb(100, 209, 100) ;
+    background-color: rgb(218, 218, 218);
     position: relative;
 }
 #icon2{
@@ -142,16 +131,20 @@ li:hover{
 
 .premier{
     
-    display: flex;
+    padding: 0% 10%;
+    padding-top: 50px;
+    width: 80%;
+    height: 400px;
+    color: white;
+    text-align: center;
     background: linear-gradient( rgb(0,0,0, 0.4), rgb(0,0, 0,0.4)),url("../images/11.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    justify-content: space-between;
-    /* filter: brightness(60%); */
     z-index: 0;
     position: relative;
-    transition: ease-in;
+}   
+    /* transition: ease-in;
     animation: changecouleur 10s linear infinite ;
 }
 @keyframes changecouleur {
@@ -172,16 +165,9 @@ li:hover{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-    }
-}
-/* .test1{
-    width: 100%;
-    height: 100%;
-    position:absolute ;
-    top: 0px;
-    left:0px;
-    background:rgb(0,0,8);
-} */
+    } 
+}*/
+
 
 .premier1{
     margin: 5% 10%;
@@ -193,34 +179,34 @@ li:hover{
 }
 .premier2{
     margin: 5% 10%;
-    align-content: letf;
-    width: 350px;
+    width: 500px;
     height: 300px;
-    background-image: url("../images/11.jpg");
+    background:linear-gradient( rgb(0,0,0, 0.1), rgb(0,0, 0,0.1)), url("../images/11.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 3px 3px black;
-    
+    border: 0px;
+    box-shadow:  rgb(194, 192, 192);
+ 
     position: relative;
-    transition: ease-out;
-    animation: changecouleur 10s linear infinite ;
+    transition: ease-in-out 2s;
+    animation: changecouleur 15s linear infinite ;
 }
 @keyframes changecouleur {
     0%{
-        background:url("../images/18.jpg");
+        background:linear-gradient( rgb(0,0,0, 0), rgb(0,0, 0,0)),url("../images/18.jpg");
         background-repeat: no-repeat;
         background-size: cover; 
         background-position: center;
        
     }
-    50%{
-        background-image:url("../images/14.jpg");
+    25%{
+        background:linear-gradient( rgb(0,0,0, 0), rgb(0,0, 0,0)),url("../images/14.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
-    75%{
-        background-image:url("../images/21.png");
+    50%{
+        background:linear-gradient( rgb(0,0,0, 0), rgb(0,0, 0,0)),url("../images/21.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -240,8 +226,9 @@ li:hover{
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 0% 10%;
+    padding: 0% 10%;
     margin-bottom: 6%;
+    background-color:rgb(185, 179, 179) ;
     /* box-shadow: 3px 3px black;
     border-radius: 30px; */
     /* animation-direction: linear; */
@@ -262,8 +249,8 @@ li:hover{
    
 }
 
-.deuxième1{
-    /* background-color: brown; */
+/* .deuxième1{
+    /* background-color: brown; 
     background-image: url("../images/23.jpg") ;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -281,7 +268,7 @@ li:hover{
         transform: rotate(360deg);
     }
 
-} 
+}  */
 .button2{
     height: 100px;
     width: 200px;
@@ -342,7 +329,6 @@ span{
 }
 #image22:hover{
     scale: 0.5;
-    rotate: 900deg;
 }
 .box{
     padding-left: 15px ;
