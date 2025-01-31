@@ -1,0 +1,364 @@
+body{
+    font-size: "poppins","sans serif";
+    margin: 0;
+    padding: 0;
+}
+/*voici le css de mon header*/
+.debut2{
+    background-color: rgb(100, 209, 100);
+}
+.debut1{
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+
+
+.Debut{
+    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    /* width: 80%;
+    position: fixed; */
+}
+
+@media  (min-width:450px ) and (max-width:750px) {
+    .header2{
+        padding: 0% 0%;
+    }
+    .header1{
+        padding: 0% 0%;
+    } 
+    nav,ul{
+        gap: 0px;
+    }
+  
+    .icon0{
+        display: flex;
+        gap: 0px;
+    } 
+    #icon2{
+        font-size: 10px;  
+    } 
+    
+    .button1{
+        
+        border-radius: 5px;
+        font-size: 10px;
+        cursor: pointer;
+           
+    }
+    nav,ul{
+        
+        gap: 0px;
+    }
+
+}
+/*Prémière barre du header*/
+
+.Barre1{
+    margin: 0% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+marquee,#direction{
+    width: 50px;
+    color:red;
+}
+.icon0{
+    display: flex;
+    gap: 3rem;
+}
+#icon1{
+    font-size: 16px;
+    color:green;
+    
+}
+#direction{
+    width: 50%;
+}
+/*Deuxième barre du header*/
+.Barre2{
+    margin: 0% 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+nav,ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+nav,li {   
+    
+    list-style: none;
+    font-size: 20px;
+}
+#logo{
+    height: 5rem;
+    margin: 0px;
+}
+.button1{
+    border: 2px solid rgb(100, 209, 100);
+    margin: 0rem 0rem;
+    border-radius: 10px;
+    height: 3rem;
+    margin-top: 1rem;
+    background-color:red;
+    box-shadow: 0px 1px 1px 1px rgb(100, 209, 100);
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;   
+}
+.button1:hover{
+    background-color: red;
+
+}
+.button0{
+    border: none;
+    align-items: center;
+    background-color:rgb(100, 209, 100) ;
+    position: relative;
+}
+#icon2{
+    color: black;
+    font-size: 16px;
+    
+}
+#AC{
+     color: red;
+     
+}
+
+li:hover{
+   overflow: visible;
+   color:rgb(34, 28, 28);
+}
+/*premier compartiment*/
+
+.premier{
+    
+    display: flex;
+    background: linear-gradient( rgb(0,0,0, 0.4), rgb(0,0, 0,0.4)),url("../images/11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    /* filter: brightness(60%); */
+    z-index: 0;
+    position: relative;
+    transition: ease-in;
+    animation: changecouleur 10s linear infinite ;
+}
+@keyframes changecouleur {
+    0%{
+        background:linear-gradient( rgb(0,0,0, 0.5), rgb(0,0, 0,0.5)),url("../images/18.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+    }
+    50%{
+        background:linear-gradient( rgb(0,0,0, 0.5), rgb(0,0, 0,0.5)),url("../images/14.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    75%{
+        background:linear-gradient( rgb(0,0,0, 0.5), rgb(0,0, 0,0.5)),url("../images/21.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+/* .test1{
+    width: 100%;
+    height: 100%;
+    position:absolute ;
+    top: 0px;
+    left:0px;
+    background:rgb(0,0,8);
+} */
+
+.premier1{
+    margin: 5% 10%;
+    width: 500px;
+    align-items: center;
+    margin-top: 150px;
+    color: white;
+    position: relative;
+}
+.premier2{
+    margin: 5% 10%;
+    align-content: letf;
+    width: 350px;
+    height: 300px;
+    background-image: url("../images/11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px black;
+    
+    position: relative;
+    transition: ease-out;
+    animation: changecouleur 10s linear infinite ;
+}
+@keyframes changecouleur {
+    0%{
+        background:url("../images/18.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+       
+    }
+    50%{
+        background-image:url("../images/14.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    75%{
+        background-image:url("../images/21.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/*Deuxième compartiment*/
+.annonce{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    margin:4% 0%;
+}
+.deuxième{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0% 10%;
+    margin-bottom: 6%;
+    /* box-shadow: 3px 3px black;
+    border-radius: 30px; */
+    /* animation-direction: linear; */
+    
+    /* animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border: 2px solid black; */
+}
+.deuxième2{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    gap: 15px;
+   
+}
+
+.deuxième1{
+    /* background-color: brown; */
+    background-image: url("../images/23.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 350px;
+    height: 300px;
+    position: relative;
+    border-radius: 50%;
+    border:25px solid white;
+    border-top: 20px solid red; 
+    animation: ani 30s linear infinite;  
+}
+
+@keyframes ani {
+    to{
+        transform: rotate(360deg);
+    }
+
+} 
+.button2{
+    height: 100px;
+    width: 200px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: red;
+    align-content: left ;
+    transition: 1s;
+}
+.button2:hover{
+    scale: 0.9;
+    background-color: green;
+}
+.button3{
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 3px;
+    background-color: red;
+    align-content: left ;
+    transition: 1s;
+    font-size: 16px;
+}
+.button3:hover{
+    scale: 0.9;
+    background-color: green;
+}
+span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color:green;
+    font-weight: bold;
+    margin-right: 20%;
+}
+
+/*Toixième compartiment*/
+.Produit{
+    width: 80%;
+    margin:0;
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    padding: 10%;
+    background-color: rgb(245, 245, 245);
+    
+}
+.image2{
+    width: 500px;
+}
+#image22{
+    height:200px;
+    width: 250PX;
+    border-radius: 20px 20px 0px 0px;
+    cursor: pointer;
+    transition: scale 1s;
+}
+#image22:hover{
+    scale: 0.5;
+    rotate: 900deg;
+}
+.box{
+    padding-left: 15px ;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 420px;
+    box-shadow: 2px 2px 2px 2px rgb(245, 245, 245) ;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2PX solid rgb(0, 0, 0);
+    transition: scale 2s;
+}
+.parent:hover{
+    scale: 1;
+}
